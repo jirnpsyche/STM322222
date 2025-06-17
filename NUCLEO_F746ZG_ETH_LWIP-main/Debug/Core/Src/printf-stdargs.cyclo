@@ -1,0 +1,6 @@
+../Core/Src/printf-stdargs.c:27:13:printchar	2
+../Core/Src/printf-stdargs.c:41:12:prints	9
+../Core/Src/printf-stdargs.c:74:12:printi	10
+../Core/Src/printf-stdargs.c:117:12:print	17
+../Core/Src/printf-stdargs.c:181:5:printf	1
+../Core/Src/printf-stdargs.c:189:5:snprintf	1
