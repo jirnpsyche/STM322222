@@ -406,8 +406,8 @@ void StartDefaultTask(void const * argument)
         return;
     }
 
-    // Set server IP address (192.168.1.127)
-    IP4_ADDR(&server_ip, 192, 168, 1, 127);
+    // Set server IP address (192.168.31.166)
+    IP4_ADDR(&server_ip, 192, 168, 31, 166);
 
     // Connect to the TCP server on port 8000
     snprintf(buffer, sizeof(buffer), "Connecting to server...\r\n");

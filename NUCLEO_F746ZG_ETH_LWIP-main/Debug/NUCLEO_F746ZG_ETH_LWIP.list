@@ -1401,8 +1401,8 @@ void StartDefaultTask(void const * argument)
  8000b5a:	e0d8      	b.n	8000d0e <StartDefaultTask+0x24e>
     }
 
-    // Set server IP address (192.168.1.127)
-    IP4_ADDR(&server_ip, 192, 168, 1, 127);
+    // Set server IP address (192.168.31.166)
+    IP4_ADDR(&server_ip, 192, 168, 31, 166);
  8000b5c:	4b73      	ldr	r3, [pc, #460]	@ (8000d2c <StartDefaultTask+0x26c>)
  8000b5e:	f8c7 320c 	str.w	r3, [r7, #524]	@ 0x20c
 
@@ -1609,7 +1609,7 @@ void StartDefaultTask(void const * argument)
  8000d20:	2000c59c 	.word	0x2000c59c
  8000d24:	0801783c 	.word	0x0801783c
  8000d28:	08017850 	.word	0x08017850
- 8000d2c:	7f01a8c0 	.word	0x7f01a8c0
+ 8000d2c:	a61fa8c0 	.word	0xa61fa8c0
  8000d30:	08017870 	.word	0x08017870
  8000d34:	0801788c 	.word	0x0801788c
  8000d38:	080178a4 	.word	0x080178a4
@@ -14675,9 +14675,9 @@ void MX_LWIP_Init(void)
  80057b4:	4b8d      	ldr	r3, [pc, #564]	@ (80059ec <MX_LWIP_Init+0x244>)
  80057b6:	22a8      	movs	r2, #168	@ 0xa8
  80057b8:	705a      	strb	r2, [r3, #1]
-  IP_ADDRESS[2] = 1;
+  IP_ADDRESS[2] = 31;
  80057ba:	4b8c      	ldr	r3, [pc, #560]	@ (80059ec <MX_LWIP_Init+0x244>)
- 80057bc:	2201      	movs	r2, #1
+ 80057bc:	221f      	movs	r2, #31
  80057be:	709a      	strb	r2, [r3, #2]
   IP_ADDRESS[3] = 120;
  80057c0:	4b8a      	ldr	r3, [pc, #552]	@ (80059ec <MX_LWIP_Init+0x244>)
@@ -14707,9 +14707,9 @@ void MX_LWIP_Init(void)
  80057e4:	4b83      	ldr	r3, [pc, #524]	@ (80059f4 <MX_LWIP_Init+0x24c>)
  80057e6:	22a8      	movs	r2, #168	@ 0xa8
  80057e8:	705a      	strb	r2, [r3, #1]
-  GATEWAY_ADDRESS[2] = 1;
+  GATEWAY_ADDRESS[2] = 31;
  80057ea:	4b82      	ldr	r3, [pc, #520]	@ (80059f4 <MX_LWIP_Init+0x24c>)
- 80057ec:	2201      	movs	r2, #1
+ 80057ec:	221f      	movs	r2, #31
  80057ee:	709a      	strb	r2, [r3, #2]
   GATEWAY_ADDRESS[3] = 1;
  80057f0:	4b80      	ldr	r3, [pc, #512]	@ (80059f4 <MX_LWIP_Init+0x24c>)
